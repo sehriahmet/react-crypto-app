@@ -15,19 +15,19 @@ const app = () => {
           <Layout>
             <div className="routes">
               <Switch>
-                <Route exact path="/">
+                <Route exact path="/react-crypto-app">
                   <Homepage />
                 </Route>
-                <Route exact path="/exchanges">
+                <Route exact path="/react-crypto-app/exchanges">
                   <Exchanges />
                 </Route>
-                <Route exact path="/cryptocurrencies">
+                <Route exact path="/react-crypto-app/cryptocurrencies">
                   <Cryptocurrencies />
                 </Route>
-                <Route exact path="/crypto/:coinId">
+                <Route exact path="/react-crypto-app/crypto/:coinId">
                   <CryptoDetails />
                 </Route>
-                <Route exact path="/news">
+                <Route exact path="/react-crypto-app/news">
                   <News />
                 </Route>
               </Switch>
@@ -39,9 +39,9 @@ const app = () => {
               All right reserved
             </Typography.Title>
             <Space>
-              <Link to="/">Home</Link>
-              <Link to="/exchanges">Exchanges</Link>
-              <Link to="/news">News</Link>
+              <Link to="/react-crypto-app">Home</Link>
+              <Link to="/react-crypto-app/exchanges">Exchanges</Link>
+              <Link to="/react-crypto-app/news">News</Link>
 
             </Space>
           </div>
